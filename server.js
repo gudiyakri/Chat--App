@@ -82,4 +82,4 @@ io.on('connection', socket => {
   });
 })
 //server.listen(3009,console.log('server running on port 3009'));
-server.listen(port,console.log(`server running on port $(port)`));
+server.listen(port,console.log(`server running on port ${port}`));
