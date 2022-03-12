@@ -17,6 +17,8 @@ const io = socketio(server);
 app.use(express.static(path.join(__dirname, 'public')));
 
 const botName = 'Chat App';
+const port = 3006 ||process.env.port
+
 
 // Run when client connects
 //It is used for for new connections to Socket.io
@@ -79,5 +81,5 @@ io.on('connection', socket => {
     }
   });
 })
-
-server.listen(3009,console.log('server running on port 3009'));
+//server.listen(3009,console.log('server running on port 3009'));
+server.listen(port,console.log(`server running on port $(port)`));
