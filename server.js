@@ -17,7 +17,7 @@ const io = socketio(server);
 app.use(express.static(path.join(__dirname, 'public')));
 
 const botName = 'Chat App';
-const port = 3006 ||process.env.port
+const port =process.env.port ||3006
 
 
 // Run when client connects
